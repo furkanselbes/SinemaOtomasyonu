@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A0000EE1-D7D7-4CCC-9E55-67F47AF80F61}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication2</RootNamespace>
+    <AssemblyName>WindowsFormsApplication2</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="bagkod.cs" />
+    <Compile Include="eklemeIslemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eklemeIslemleri.Designer.cs">
+      <DependentUpon>eklemeIslemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="filmEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="filmEkle.Designer.cs">
+      <DependentUpon>filmEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="filmSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="filmSil.Designer.cs">
+      <DependentUpon>filmSil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hesapEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hesapEkle.Designer.cs">
+      <DependentUpon>hesapEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hesapSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hesapSil.Designer.cs">
+      <DependentUpon>hesapSil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Raporlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Raporlar.Designer.cs">
+      <DependentUpon>Raporlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="salonSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="salonSil.Designer.cs">
+      <DependentUpon>salonSil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="satisListeleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="satisListeleme.Designer.cs">
+      <DependentUpon>satisListeleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="seansListeleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="seansListeleme.Designer.cs">
+      <DependentUpon>seansListeleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="personelHesabiEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="personelHesabiEkle.Designer.cs">
+      <DependentUpon>personelHesabiEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="personelMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="personelMenu.Designer.cs">
+      <DependentUpon>personelMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="giris.Designer.cs">
+      <DependentUpon>giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="salonEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="salonEkle.Designer.cs">
+      <DependentUpon>salonEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="seansEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="seansEkle.Designer.cs">
+      <DependentUpon>seansEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="seansSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="seansSil.Designer.cs">
+      <DependentUpon>seansSil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="silmeIslemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="silmeIslemleri.Designer.cs">
+      <DependentUpon>silmeIslemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SinemaOtomasyonuDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SinemaOtomasyonuDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SinemaOtomasyonuDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SinemaOtomasyonuDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SinemaOtomasyonuDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SinemaOtomasyonuDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="yoneticiHesabiEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yoneticiHesabiEkle.Designer.cs">
+      <DependentUpon>yoneticiHesabiEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yoneticiMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yoneticiMenu.Designer.cs">
+      <DependentUpon>yoneticiMenu.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="eklemeIslemleri.resx">
+      <DependentUpon>eklemeIslemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="filmEkle.resx">
+      <DependentUpon>filmEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="filmSil.resx">
+      <DependentUpon>filmSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hesapEkle.resx">
+      <DependentUpon>hesapEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hesapSil.resx">
+      <DependentUpon>hesapSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Raporlar.resx">
+      <DependentUpon>Raporlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="salonSil.resx">
+      <DependentUpon>salonSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="satisListeleme.resx">
+      <DependentUpon>satisListeleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="seansListeleme.resx">
+      <DependentUpon>seansListeleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="personelHesabiEkle.resx">
+      <DependentUpon>personelHesabiEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="personelMenu.resx">
+      <DependentUpon>personelMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="giris.resx">
+      <DependentUpon>giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="salonEkle.resx">
+      <DependentUpon>salonEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="seansEkle.resx">
+      <DependentUpon>seansEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="seansSil.resx">
+      <DependentUpon>seansSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="silmeIslemleri.resx">
+      <DependentUpon>silmeIslemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yoneticiHesabiEkle.resx">
+      <DependentUpon>yoneticiHesabiEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yoneticiMenu.resx">
+      <DependentUpon>yoneticiMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="SinemaOtomasyonuDataSet.xsc">
+      <DependentUpon>SinemaOtomasyonuDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SinemaOtomasyonuDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SinemaOtomasyonuDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SinemaOtomasyonuDataSet.xss">
+      <DependentUpon>SinemaOtomasyonuDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SinemaOtomasyonuDataSet1.xsc">
+      <DependentUpon>SinemaOtomasyonuDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SinemaOtomasyonuDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SinemaOtomasyonuDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SinemaOtomasyonuDataSet1.xss">
+      <DependentUpon>SinemaOtomasyonuDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SinemaOtomasyonuDataSet2.xsc">
+      <DependentUpon>SinemaOtomasyonuDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="SinemaOtomasyonuDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SinemaOtomasyonuDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SinemaOtomasyonuDataSet2.xss">
+      <DependentUpon>SinemaOtomasyonuDataSet2.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SinemaOtomasyonu1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\personel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SinemaOtomasyonu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\takvimIcon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngfind.com-audience-png-1423340.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
